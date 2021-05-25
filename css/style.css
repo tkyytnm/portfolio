@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Arvo", serif;
+  font-size: 1.6rem;
+  color: #707070;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin: 3% 0;
+}
+
+p {
+  line-height: 3rem;
+  margin: 2% 0;
+}
+
+a {
+  color: #707070;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-bottom: 1px solid #707070;
+}
+
+a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+img {
+  vertical-align: bottom;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3% 25%;
+}
+
+#logo a {
+  display: block;
+  border: 2px solid #707070;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+nav a {
+  font-weight: bold;
+  margin-left: 4%;
+}
+
+main {
+  margin: 1% 25%;
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.about-me-container figure {
+  width: 40%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-left: 2%;
+}
+
+.about-me-container figure img {
+  width: 100%;
+  height: auto;
+}
+
+.projects-container {
+  margin-bottom: 5%;
+}
+
+.projects-container ul {
+  list-style-type: none;
+}
+
+.projects-container li {
+  margin-bottom: 2%;
+}
+
+.skills-container {
+  margin-bottom: 5%;
+}
+
+footer {
+  background-color: #707070;
+  color: #ffffff;
+  margin-top: 10%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
