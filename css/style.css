@@ -48,7 +48,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 3% 25%;
+  padding: 3% 25%;
 }
 
 #logo a {
@@ -76,12 +76,16 @@ main {
 }
 
 .about-me-container {
+  padding-top: 3%;
+}
+
+.about-me {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5%;
 }
 
-.about-me-container figure {
+.about-me figure {
   width: 40%;
   height: auto;
   overflow: hidden;
@@ -89,13 +93,13 @@ main {
   margin-left: 2%;
 }
 
-.about-me-container figure img {
+.about-me figure img {
   width: 100%;
   height: auto;
 }
 
 .projects-container {
-  margin-bottom: 5%;
+  padding-top: 3%;
 }
 
 .projects-container ul {
@@ -107,12 +111,19 @@ main {
 }
 
 .skills-container {
-  margin-bottom: 5%;
+  padding-top: 5%;
+}
+
+.skills-container i {
+  font-size: 4rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {
-  background-color: #707070;
-  color: #ffffff;
   margin-top: 10%;
   padding: 2%;
   display: flex;
