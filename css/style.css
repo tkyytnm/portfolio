@@ -13,7 +13,7 @@ body {
   font-family: "Arvo", serif;
   font-size: 1.6rem;
   color: #707070;
-  background-color: #FFFFFC;
+  background-color: #fffffc;
 }
 
 h1 {
@@ -60,7 +60,7 @@ header {
 #logo a {
   display: block;
   border: 2px solid #707070;
-  background-color: #FFEE00;
+  background-color: #ffee00;
   padding: 1rem 2rem;
   border-radius: 5rem;
   text-decoration: none;
@@ -84,7 +84,7 @@ main {
 
 .container {
   padding: 3% 3% 6%;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1) ;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   background-color: white;
 }
@@ -123,14 +123,49 @@ main {
   margin-bottom: 4%;
 }
 
+.projects-container span {
+  cursor: pointer;  
+}
+
+.projects-container span i {
+  display: inline-block;
+  transition: all 0.5s;
+  color: #ffee00;
+}
+
+.projects-container span i.on {
+  transform: rotate(90deg);
+}
+
 .projects-container figure {
-  display: none;
   width: 80%;
+  margin: 0 auto;
   overflow: hidden;
+  transition: all 0.5s;
+  border-radius: 0.5rem;
+}
+
+.projects-container figure.off {
+  max-height: 0;
+}
+
+.projects-container figure.on {
+  margin: 5% auto;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  max-height: 35rem;
 }
 
 .projects-container figure img {
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.projects-container .gt {
+  transition: all 0.5s;
+}
+
+.projects-container .gt-on {
+  transform: rotate(90deg);
 }
 
 .skills-container {
@@ -141,13 +176,14 @@ main {
   font-size: 4rem;
 }
 
-.skills {
-  display: flex;
-  justify-content: space-between;
+.skills i {
+  font-size: 4rem;
+  margin-right: 4%;
+  margin-bottom: 2%;
 }
 
 .contact-container {
-  
+  margin-bottom: 5%;
 }
 
 .contact-container a {
@@ -156,7 +192,7 @@ main {
 
 .contacts i {
   font-size: 4rem;
-  margin-right: 2%;
+  margin-right: 4%;
   text-decoration: line-through;
 }
 
