@@ -37,6 +37,7 @@ a {
 }
 
 a:hover {
+  color: #000000;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
@@ -72,7 +73,7 @@ nav a {
 }
 
 main {
-  margin: 1% 25%;
+  margin: 0 25%;
 }
 
 .about-me-container {
@@ -121,6 +122,19 @@ main {
 .skills {
   display: flex;
   justify-content: space-between;
+}
+
+.contact-container {
+  padding-top: 3%;
+}
+
+.contact-container a {
+  border-bottom: none;
+}
+
+.contacts i {
+  font-size: 4rem;
+  margin-right: 2%;
 }
 
 footer {
