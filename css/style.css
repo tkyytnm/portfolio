@@ -14,7 +14,6 @@ body {
   font-size: 1.6rem;
   color: #707070;
   background-color: #fffffc;
-  transition: all 0.3s;
 }
 
 h1 {
@@ -180,7 +179,6 @@ main {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
   border-radius: 0.5rem;
   background-color: white;
-  transition: all 0.3s;
 }
 
 .about-me-container {
