@@ -1,22 +1,19 @@
-// Projects Toggle
-
-const project1 = document.getElementById("company-home-page-with-flexbox");
-const project2 = document.getElementById("responsive-club-website");
+const projectsList = document.getElementById("projects-list");
+const project = projectsList.getElementsByTagName('li');
 
 const toggleFigure = function (e) {
-  const targetId = e.target.getAttribute("id") || e.target.parentNode.getAttribute("id");
-  const target = document.getElementById(targetId);
-  const figure = target.parentNode.querySelector('figure');
+  const icon = e.target.parentElement.getElementsByTagName('i')[0];
+  const figure = icon.parentElement.parentElement.getElementsByTagName('figure')[0];
 
-  if (figure.className === 'off') {
-    target.querySelector("i").classList.add('on');
-    figure.className = 'on';
-    target.querySelector("i").classList.add('on');
+  if (!figure.className) {
+    icon.classList.add('on');
+    figure.classList.add('on');
   } else {
-    figure.className = 'off';
-    target.querySelector("i").classList.remove('on');
+    icon.classList.remove('on');
+    figure.classList.remove('on');
   }
 };
 
-project1.addEventListener("click", toggleFigure);
-project2.addEventListener("click", toggleFigure);
+for (let i = 0; i < project.length; i++) {
+  project[i].addEventListener("click", toggleFigure);
+}

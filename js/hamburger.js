@@ -2,8 +2,6 @@ const ham = document.getElementById("hamburger");
 const nav = ham.parentElement.getElementsByTagName("nav")[0];
 const aLink = ham.parentElement.getElementsByTagName("a");
 
-console.log(aLink);
-
 const openHam = function () {
   ham.className = "on";
   nav.className = "on";

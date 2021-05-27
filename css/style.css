@@ -214,10 +214,6 @@ main {
 
 .projects-container li {
   margin-bottom: 4%;
-}
-
-.projects-container span {
-  display: block;
   cursor: pointer;  
 }
 
@@ -236,9 +232,6 @@ main {
   overflow: hidden;
   transition: all 0.5s;
   border-radius: 0.5rem;
-}
-
-.projects-container figure.off {
   max-height: 0;
 }
 
@@ -253,11 +246,11 @@ main {
   max-width: 100%;
 }
 
-.projects-container .gt {
+.projects-container  i {
   transition: all 0.5s;
 }
 
-.projects-container .gt-on {
+.projects-container i.on {
   transform: rotate(90deg);
 }
 
