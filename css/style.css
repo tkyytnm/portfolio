@@ -14,6 +14,7 @@ body {
   font-size: 1.6rem;
   color: #707070;
   background-color: #fffffc;
+  transition: all 0.3s;
 }
 
 h1 {
@@ -50,14 +51,26 @@ a:hover img {
   opacity: 0.8;
 }
 
+.dark-container {
+  padding: 1% 25%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+#dark {
+  cursor: pointer;
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3% 25%;
+  padding: 0 25% 3%;
 }
 
 #logo a {
+  color: #707070;
   display: block;
   border: 2px solid #707070;
   background-color: #ffee00;
@@ -66,10 +79,14 @@ header {
   text-decoration: none;
 }
 
+#logo a:hover {
+  color: #707070;
+}
+
 nav {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
   flex-grow: 1;
 }
 
@@ -84,9 +101,10 @@ main {
 
 .container {
   padding: 3% 3% 6%;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
   border-radius: 0.5rem;
   background-color: white;
+  transition: all 0.3s;
 }
 
 .about-me-container {
@@ -124,11 +142,11 @@ main {
 }
 
 .projects-container span {
+  display: block;
   cursor: pointer;  
 }
 
 .projects-container span i {
-  display: inline-block;
   transition: all 0.5s;
   color: #ffee00;
 }
@@ -151,7 +169,7 @@ main {
 
 .projects-container figure.on {
   margin: 5% auto;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
   max-height: 35rem;
 }
 
@@ -186,7 +204,11 @@ main {
   margin-bottom: 5%;
 }
 
-.contact-container a {
+.contact-container .contacts a {
+  border-bottom: none;
+}
+
+.contact-container .contacts a:hover {
   border-bottom: none;
 }
 
@@ -201,4 +223,38 @@ footer {
   padding: 2%;
   display: flex;
   justify-content: center;
+}
+
+
+/*** dark mode ***/
+body.dark {
+  background-color: #222222;
+  color: #dddddd;
+}
+
+body.dark a {
+  color: #dddddd;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-bottom: 1px solid #dddddd;
+}
+
+body.dark a:hover {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+#logo a {
+  color: #111111;
+  border: 2px solid #111111;
+}
+
+#logo a:hover {
+  color: #111111;
+}
+
+body.dark .container {
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+  background-color: #111111;
 }
