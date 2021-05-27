@@ -118,15 +118,14 @@ main {
 
 .about-me figure {
   width: 40%;
-  height: auto;
   overflow: hidden;
-  border-radius: 1rem;
   margin-left: 2%;
 }
 
 .about-me figure img {
   width: 100%;
   height: auto;
+  border-radius: 1rem;
 }
 
 .projects-container {
